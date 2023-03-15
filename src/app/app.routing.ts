@@ -23,7 +23,7 @@ const routes: Routes =[
     redirectTo: 'dashboard'
   }
 ];
-
+ 
 @NgModule({
   imports: [
     CommonModule,

@@ -12,6 +12,10 @@ import { ComponentsModule } from './components/components.module';
 import { AppComponent } from './app.component';
 
 import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.component';
+import { ComprasModule } from '././compras/compras.module';
+import { FormulariosModule } from './formularios/formularios.module';
+import { VentasModule } from './ventas/ventas.module';
+import { DepartamentoComponent } from '././departamento/departamento.component';
 
 @NgModule({
   imports: [
@@ -19,6 +23,9 @@ import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.compon
     FormsModule,
     HttpClientModule,
     ComponentsModule,
+    ComprasModule,
+    FormulariosModule,
+    VentasModule,
     RouterModule,
     AppRoutingModule,
     NgbModule,
@@ -26,10 +33,11 @@ import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.compon
   ],
   declarations: [
     AppComponent,
-    AdminLayoutComponent
-
+    AdminLayoutComponent,
+    DepartamentoComponent
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+ 
